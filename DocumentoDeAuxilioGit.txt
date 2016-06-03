@@ -1,0 +1,52 @@
+Working Directory
+Staging Area
+Git directory
+
+git add *.formato(txt,xml) <- Adiciona todos arquivos com o formato determinado
+git add (nomedoarquivo) <- Adiciona o arquivo especificado
+git add . <- Adiciona tudo
+
+git branch <nomeDaBranch> <- faz a criacao de uma branch
+git branch -d <nomeDaBranch> <- Retira a mesclagem daquela branch da branch na qual você se encontra
+
+git checkout -- <nomedoarquivo> <- devolve o arquivo a seu status original de acordo com seu ultimo commit
+git checkout <tag> <- volta seu working space para a tag selecionada
+git checkout <nomeDaBranch> <- faz a troca do seu working area para determinada branch
+git checkout -b <nomeDaBranch> 							<- faz a criacao da branch e já altera o seu working para aquela branch
+
+git commit -m "Mensagem do commit" 						<- Faz o commit do que esta adicionado a Staging Area
+git commit -a "Mensagem do commit" 						<- Faz o commit do que esta na sua working area, fazendo assim o add junto
+git commit --amend -m "Mensagem do commit(edicao)" 		<- Serve para realizar uma alteração em um commit já feito
+
+git diff 												<- apresenta a diferença do seu working space com o diretorio
+git diff --staged 										<- apresenta a diferença do seu staging com o diretorio
+
+git fetch origin <nomeDaBranch> 						<- Trás os arquivos do repositorio para sua branch, porém sem mesclar os mesmos
+
+git init        										<- Transforma aquela pasta em um repositorio
+
+gitk		            								<- Interface gráfica do git
+
+git log     		    								<- trás todos commits ja feitos
+git log -p      										<- coloca log em ordem cronologica e adiciona o git diff em cada commit
+git log         										<- Inumeras possibilidades (Utilizar interfaces gráficas)
+
+git merge <nomeDaBranch> (***A branch para a qual sera mesclada as informacoes, é a branch na qual você se encontra no momento***)
+*-*Alterações feitas na mesma linha, que possam gerar conflito, na hora do merge, será apresentada tal diferença e solicitara que seja definido qual será escolhido*-*
+
+git push origin <nomeDaBranch -> Envia os arquivos do seu remote, para outra branch
+
+git pull origin <nomeDaBranch> -> Trás os arquivos do repositorio para sua branch.
+
+git reseat HEAD <nomedoarquivo> <- remover um arquivo do staging area
+
+git remote -> Diz qual o nome do seu remote
+
+git rm <nomedoarquivo> <- deletar arquivos que estão no repositorio
+
+git status = Status do repositorio, o que está diferente, o que foi adicionado e será commitado
+
+git tag -a <nomeTag> -m "Descrição da tag" <- -a serve para criar uma tag anotada com descrição e apontando quem criou 
+git tag -a <nomeTag> <chave de commit> -m "Descrição da tag" <- cria uma tag igual a de cima, mas utilizando como base um commit antigo
+git tag -d <tag> <- Deleta a tag existente
+

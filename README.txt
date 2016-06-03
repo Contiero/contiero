@@ -1,1 +1,1 @@
-Repositorio feito para treinamento e auxilio no GIT.
+Repositorio feito para treinamento e auxílio no GIT.
